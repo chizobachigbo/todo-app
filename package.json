@@ -1,6 +1,7 @@
 {
   "name": "todo-app",
   "homepage": "https://chizobachigbo.github.io/todo-app/",
+  "private": false,
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

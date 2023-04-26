@@ -1,0 +1,37 @@
+.todo-header {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-box {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  input, .btn {
+    height: 44px;
+  }
+  input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 0.5em;
+    outline: none;
+    border: 2px solid var(--primary-color);
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 0.75em 1em;
+    font-size: 1em;
+    padding-inline: 0.75em;
+    border-radius: 0 5px 0 0;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    &:hover {
+      background-color: var(--primary-color-hover);
+    }
+  }
+}

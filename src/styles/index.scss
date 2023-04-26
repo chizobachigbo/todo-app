@@ -1,0 +1,77 @@
+:root {
+  --background-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --primary-color: #286565;
+  --primary-color-hover: #245b5b;
+  --secondary-color: #bccfcf;
+  --secondary-color-hover: #dfe8e8;
+  --text-color: #000411;
+  --font-size: 16px;
+  --link-size: 14px;
+  --animation-speed: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+  line-height: 24px;
+  font-family: Georgia, serif, sans-serif;
+  background-color: var(--background-color);
+}
+
+.header {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.todo-wrapper {
+  margin-top: 1em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px var(--shadow-color);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+}
+
+.container {
+  padding-inline: 20vw;
+  max-width: 100%;
+}
+
+@import "partials/todo-body.scss";
+@import "partials/todo.scss";
+@import "partials/edit-todo.scss";
+@import "partials/todo-header.scss";
+
+@media screen and (max-width: 1050px) {
+  .container {
+    padding-inline: 12vw;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  :root {
+    --font-size: 12px;
+    --link-size: 10px;
+  }
+
+  body {
+    font-size: var(--font-size);
+    line-height: 24px;
+  }
+
+  .sort-todo {
+    font-size: 10px;
+  }
+
+  .container {
+    padding-inline: 5vw;
+  }
+}

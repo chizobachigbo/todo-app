@@ -1,8 +1,7 @@
 {
-  "name": "recipe-app",
-  "homepage": "https://chizobachigbo.github.io/recipe-hub/",
+  "name": "todo-app",
+  "homepage": "https://chizobachigbo.github.io/todo-app/",
   "version": "0.1.0",
-  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",

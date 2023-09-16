@@ -26,7 +26,7 @@ export default function TodoHeader({
       }
     }
   };
-
+  
   const submitTodo = (e) => {
     e.preventDefault();
     if (input !== "") {

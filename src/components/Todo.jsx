@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Todo({ text, todo, todos, setTodos }) {
+  
   const editingTodo = () => {
     setTodos(
       todos.map((el) => {
